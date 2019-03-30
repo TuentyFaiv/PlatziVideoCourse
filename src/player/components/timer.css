@@ -1,0 +1,11 @@
+.Timer {
+  width: 90px;
+  font-size: 14px;
+  color: white;
+  padding: 0 10px 0 10px;
+  display: flex;
+  align-items: center;
+}
+.Timer p {
+  margin: 0;
+}

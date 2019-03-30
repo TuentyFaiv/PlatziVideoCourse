@@ -1,0 +1,62 @@
+{
+  "name": "platzi-video",
+  "version": "1.0.0",
+  "description": "curso de React Router",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --config ./webpack.dev.config.js",
+    "local": "webpack --env.NODE_ENV=local",
+    "start": "webpack -p --env.NODE_ENV=production",
+    "server": "webpack --env.NODE_ENV=local --config ./webpack.server.config.js",
+    "build": "babel-node src/server.js --presets @babel/preset-react,@babel/preset-env",
+    "watch:server": "babel-watch src/server.js --presets react,es2015,stage-2"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Tonalli_Lopez",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-watch": "^7.0.0",
+    "clean-webpack-plugin": "^1.0.1",
+    "css-loader": "^2.1.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "immutable": "^4.0.0-rc.12",
+    "normalizr": "^3.3.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-redux": "^6.0.1",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1",
+    "redux-immutable": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "engines": {
+    "node": "10.12.0"
+  }
+}

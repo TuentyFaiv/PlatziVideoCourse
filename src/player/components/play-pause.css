@@ -1,0 +1,19 @@
+.PlayPause {
+  width: 20px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.PlayPause button {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  border: none;
+  background: transparent;
+  outline: 0;
+  width: inherit;
+  box-sizing: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 0;
+}
